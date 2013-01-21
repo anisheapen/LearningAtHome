@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="dab326e7-737a-4555-a853-39883e4b8872" name="WatsonsPetStore" linkedPackageId="a1da7572-bbdf-4246-851e-a33ebd3570cb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="a89d449c-dabc-4e7f-a79d-519289b59694">
+      <elementDefinition Id="dc481739-fd73-4250-92ac-4dda8c758680" />
+      <body>This is the initial diagram</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c30de65a-8fe3-4926-91c0-5ae2ad8e7737">
+      <profileInstance Id="1c2f59bf-c0b5-474b-af21-e9974a717231" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3227b3a1-acfa-41e3-927f-b35d82594397">
+      <profileInstance Id="2668090b-d032-46df-b407-c0c0ff8e522c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ff0466c7-15ad-4329-9d46-14f7ce31bb1d" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e388121-5d1c-4763-9b35-9890499cff10" />
+        <targetEnds>
+          <association Id="cf9a9ae3-676e-47b0-bbe4-3f35614d5c5a" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName=" Browse Products" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="afbc060f-7c45-487e-a002-e2e937d1c487" LastKnownName=" Browse Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d0d2de3-7470-43fc-ac67-d15a0bd83920" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61bc2080-ae4c-4336-9d63-7290c256ba66" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86fc11db-bc8c-4d0f-a895-aeeaae085cc0" name=" Browse Products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13fe4873-c5cd-4f4d-966d-2cc206b592df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="331293f1-d68a-48b9-b78d-5cc3c09fc746" />
+          </association>
+          <association Id="bde7e5d5-2a5e-4f8e-b301-dc816154d1b0" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Browse Services" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ad3a43b1-1c70-4154-880a-ba57f9144ce4" LastKnownName="Browse Services" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9c90886-93ff-4ae2-b810-158b6806fa17" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3e5968a4-1468-495f-8b62-caac33a45331" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97efa0b2-8923-43a0-9184-6e233da1cb49" name="Browse Services" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6722277a-03bb-4453-bdda-36a1622a885d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16a87c55-2ecb-4501-9c94-f5522ec5f9a7" />
+          </association>
+          <association Id="b1e62688-e2f2-4959-9b76-5317ba9d09ac" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Purchase Products" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cfc468e9-f99c-4cb9-ad6d-a104a2924e22" LastKnownName="Purchase Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ddd18ca3-9894-47ce-971f-f1b1a0da57b1" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01ceadc6-0ca8-4fc9-a3b6-798a3aa957f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef150e8d-9986-4e8a-acd4-4f16fce77110" name="Purchase Products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ce317278-b838-4bd5-a739-fbe15772be91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="71d3ce2f-e2e4-4499-85f4-179d38edcac6" />
+          </association>
+          <association Id="76f7405d-b5c4-48e3-9812-209fd03874b8" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Reserve Service Appointment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d9f41cbe-682a-4aad-97ba-9adefa8a8476" LastKnownName="Reserve Service Appointment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a10a37b4-364d-4db8-bee4-bf89c2d2be3d" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba333b5a-b4b1-4ae1-8dbf-1db6b755d626" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93e897f7-16ee-4bed-81ea-87b4a0231d15" name="Reserve Service Appointment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f77445c5-6e05-4bb3-94b3-c715a5588e1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="767cb6e3-90be-4ba8-8548-7fddc05f7f1c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="61103b99-88d5-47bc-83ef-2c7b82bbf869" name="Inventory System" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afd903cf-b417-42d8-8f9a-7093faac4999" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ac1b90a5-d5f2-46f0-8c50-1ed247cde4bf" name="Club Rewards Member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98889d09-c9ce-46f0-8e07-00ff1578ddde" />
+        <generalsInternal>
+          <generalization Id="f648dc6b-0e25-4ed2-9d73-d0613d1a1013" isSubstitutable="false">
+            <actorMoniker Id="ff0466c7-15ad-4329-9d46-14f7ce31bb1d" LastKnownName="Customer" />
+            <elementDefinition Id="e9889e59-79d6-484c-b854-dcdec7aaa012" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="580d41a6-efe8-48c4-9446-dc663b377305" isDerived="false" sourceEndRoleName="Club Rewards Member" targetEndRoleName="Change Service Appointment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="530128fc-4856-4302-ad7e-39aa225a65b4" LastKnownName="Change Service Appointment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6ac43ab-b74a-4d58-bf6e-3c4f739ef36e" name="Club Rewards Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b85f3eb0-b99d-4dfa-acbc-c288c049aab5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce4d4fa7-5853-4a5a-8ced-1eb4c8307929" name="Change Service Appointment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="412b3164-4b4a-4667-8f15-f2f49df38c38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="979f6fe0-9499-4430-b98e-8f1a4f0c8f4a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7bc5b038-4898-40ac-8023-cc8050dac754" name="Stock Room Attendent" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b83158ff-9649-49c0-ab0e-259f8668ab40" />
+        <targetEnds>
+          <association Id="a9101f2d-bcc5-45bf-8b1d-ca0061d8863d" isDerived="false" sourceEndRoleName="Stock Room Attendent" targetEndRoleName="Retrieve Products" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="da06f909-4b3b-4263-88f9-0829572aa0f6" LastKnownName="Retrieve Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="200c06b1-f0c9-48b5-8d4a-a5d322af9954" name="Stock Room Attendent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d53e53fd-b9c5-4e4e-b0d4-f91f0ce78e6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f70963a0-23c2-44d1-908c-8392a05c308b" name="Retrieve Products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="890696cc-6dfa-44ee-9c75-5da5968a001d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8287386c-d9c2-4736-b482-7c6f1dc7badc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" name="Watsons Pet Store Website" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e65ed04e-e19e-484c-97f9-e667b060d7f6" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="ad3a43b1-1c70-4154-880a-ba57f9144ce4" name="Browse Services" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a57e80e-6533-4ed2-b812-fcf74ee76870" />
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="530128fc-4856-4302-ad7e-39aa225a65b4" name="Change Service Appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cdf706f4-1419-4073-af09-4b520d6ddfa2" />
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d9f41cbe-682a-4aad-97ba-9adefa8a8476" name="Reserve Service Appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6573af0b-9c3e-4463-9c94-6fe673951725" />
+        <additions>
+          <include Id="a5778a67-e0cc-4849-8cf8-feeb9b345a61">
+            <useCaseMoniker Id="91cc9482-f6cc-4bca-a4d1-1862818982c0" LastKnownName="Collect Payment Information" />
+            <elementDefinition Id="2e0aa893-ea6e-48e0-857e-701cc2a40fc6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="afbc060f-7c45-487e-a002-e2e937d1c487" name=" Browse Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9042e4dc-495d-49e2-95fb-3a5712d78494" />
+        <targetEnds>
+          <association Id="47e210f5-d83e-46b3-99f1-aef75623fcd8" isDerived="false" sourceEndRoleName=" Browse Products" targetEndRoleName="Inventory System" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="61103b99-88d5-47bc-83ef-2c7b82bbf869" LastKnownName="Inventory System" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a623d5f-2c8d-486e-87b1-19eb2786d6bc" name=" Browse Products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9a6292e5-47e5-4ba3-9ea6-3709c9628ad0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c824e0b-005e-452c-9f63-c9978610eb9f" name="Inventory System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e0e3479-2fac-4664-9a55-0413ad758541" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="69f232d0-c59e-4ea9-b2b4-72f533dbcf99" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="91cc9482-f6cc-4bca-a4d1-1862818982c0" name="Collect Payment Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d25b40c9-6322-44d4-a7b3-f1e0622b7cb3" />
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="da06f909-4b3b-4263-88f9-0829572aa0f6" name="Retrieve Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec8d6cc8-1f4a-40f7-a76a-ea1c3bcae1bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="cfc468e9-f99c-4cb9-ad6d-a104a2924e22" name="Purchase Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8efdee2d-6a7b-44da-bec9-df89f18cc2a9" />
+        <additions>
+          <include Id="615b4b52-7487-411d-9ce5-51be8976f846">
+            <useCaseMoniker Id="91cc9482-f6cc-4bca-a4d1-1862818982c0" LastKnownName="Collect Payment Information" />
+            <elementDefinition Id="a93494f9-be0c-4b2b-8e85-f5f51455271f" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d63fed67-166e-4745-b729-2220c3c74bd0" name="COD Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b6ddb8c-c540-4206-9ceb-91aa130891a8" />
+        <extendedCases>
+          <extend Id="c1d2c82b-d7e0-4dae-9ccb-d8146acebe71">
+            <useCaseMoniker Id="91cc9482-f6cc-4bca-a4d1-1862818982c0" LastKnownName="Collect Payment Information" />
+            <elementDefinition Id="9c3351c0-9520-4ea2-ba48-58a99b039b06" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c9f6f552-c2b4-4c1c-b318-616440615179" name="Credit Card Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02ed73e2-48fb-46c8-b01d-d162e41551ca" />
+        <extendedCases>
+          <extend Id="caa05ea7-884c-455c-bb32-442e6b0f744f">
+            <useCaseMoniker Id="91cc9482-f6cc-4bca-a4d1-1862818982c0" LastKnownName="Collect Payment Information" />
+            <elementDefinition Id="e102ec66-0693-434e-aa23-9d9dec3fe5dd" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <artifact Id="44dd2dc8-57ed-4015-af08-5742d0903702" name="Reference Site" isAbstract="false" isLeaf="false" fileName="http:\\www.google.co.in">
+        <elementDefinition Id="736e96b4-e9a7-421d-a5d9-709242e6262f" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="bf317b5d-6b03-44f6-9335-729079bb7bb4" name="Order Out Of Stock Item" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61b96e7b-93a4-4f73-8849-ff7beeb41612" />
+        <extendedCases>
+          <extend Id="0876473c-387c-4288-b705-21017bd7228e">
+            <useCaseMoniker Id="cfc468e9-f99c-4cb9-ad6d-a104a2924e22" LastKnownName="Purchase Products" />
+            <elementDefinition Id="01b24201-47c0-43f4-9dac-6c5a423ef024" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d60a37cd-e06c-4b8e-989c-22e9c00c796d" LastKnownName="Watsons Pet Store Website" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a1da7572-bbdf-4246-851e-a33ebd3570cb" name="PluralsightUMLModelling">
+    <elementDefinition Id="106b76f7-a8ab-429b-840c-f6c4003af46a" />
+  </package>
+</useCaseModelRoot>

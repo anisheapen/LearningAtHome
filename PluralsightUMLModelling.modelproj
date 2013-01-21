@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61e39c11-08aa-4dfd-b9ea-0421e7240448}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>PluralsightUMLModelling</Name>
+    <RootNamespace>PluralsightUMLModelling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="WatsonsPetStore.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WatsonsPetStore.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WatsonsPetStore.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="DemoSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DemoSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DemoSequence.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\PluralsightUMLModelling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
